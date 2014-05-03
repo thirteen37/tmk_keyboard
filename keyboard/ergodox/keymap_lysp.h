@@ -26,7 +26,7 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KEYMAP(  // layer 0 : default
         // left hand
         EQL, 1,   2,   3,   4,   5,   ESC,
-        TAB, Q,   W,   E,   R,   T,   FN3,
+        TAB, Q,   W,   E,   R,   T,   INS,
         CLCK,A,   S,   D,   F,   G,
         LSFT,Z,   X,   C,   V,   B,   FN2,
         LGUI,GRV, BSLS,LEFT,RGHT,
@@ -56,7 +56,7 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                  TRNS,TRNS,TRNS,
         // right hand
              TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,
-             TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,
+             FN3, TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,
                   TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,
              TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,RSFT,
                        TRNS,TRNS,TRNS,TRNS,RGUI,
@@ -89,18 +89,18 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KEYMAP(  // layout: layer 3: Colemak layout
         // left hand
         TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,
-        TRNS,Q,   D,   R,   W,   B,   TRNS,
-        TRNS,A,   S,   H,   T,   G,
-        TRNS,Z,   X,   M,   C,   V,   TRNS,
+        TRNS,Q,   W,   F,   P,   G,   TRNS,
+        TRNS,A,   R,   S,   T,   D,
+        TRNS,Z,   X,   C,   V,   B,   TRNS,
         TRNS,TRNS,TRNS,TRNS,TRNS,
                                       TRNS,TRNS,
                                            TRNS,
                                  TRNS,TRNS,TRNS,
         // right hand
              TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,
-             TRNS,J,   F,   U,   P,   4,   TRNS,
-                  Y,   N,   E,   O,   I,   TRNS,
-             TRNS,K,   L,   TRNS,TRNS,TRNS,TRNS,
+             TRNS,J,   L,   U,   Y,   SCLN,TRNS,
+                  H,   N,   E,   I,   O,   TRNS,
+             TRNS,K,   M,   TRNS,TRNS,TRNS,TRNS,
                        TRNS,TRNS,TRNS,TRNS,TRNS,
         TRNS,TRNS,
         TRNS,
