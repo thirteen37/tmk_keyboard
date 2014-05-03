@@ -115,4 +115,5 @@ micro: all
 cub: OPT_DEFS += -DKEYMAP_CUB
 cub: all
 
-
+lysp: OPT_DEFS += -DKEYMAP_LYSP
+lysp: all
