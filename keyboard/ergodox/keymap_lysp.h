@@ -4,15 +4,15 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /* Keymap 0: Default Layer
      *
      * ,--------------------------------------------------.           ,--------------------------------------------------.
-     * |   ~    |   1  |   2  |   3  |   4  |   5  |  Esc |           |  Fn1 |   6  |   7  |   8  |   9  |   0  |   -    |
+     * |   `    |   1  |   2  |   3  |   4  |   5  |  Esc |           |   =  |   6  |   7  |   8  |   9  |   0  |   -    |
      * |--------+------+------+------+------+-------------|           |------+------+------+------+------+------+--------|
-     * | Tab    |   Q  |   W  |   E  |   R  |   T  |  Ins |           |   ]  |   Y  |   U  |   I  |   O  |   P  |   [    |
+     * | Tab    |   Q  |   W  |   E  |   R  |   T  |   \  |           |   ]  |   Y  |   U  |   I  |   O  |   P  |   [    |
      * |--------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
      * | Caps   |   A  |   S  |   D  |   F  |   G  |------|           |------|   H  |   J  |   K  |   L  |   ;  |   '    |
      * |--------+------+------+------+------+------| LGui |           | RGui |------+------+------+------+------+--------|
      * | LShift |   Z  |   X  |   C  |   V  |   B  |      |           |      |   N  |   M  |   ,  |   .  |   /  | RShift |
      * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
-     *   |  Fn2 | `    |   /  |  Lft | Rght |                                       |  Lft |  Up  |  Dn  | Rght |  Fn0 |
+     *   |  Fn1 | Fn2  |  Ins |  Lft | Rght |                                       |  Lft |  Up  |  Dn  | Rght |  Fn0 |
      *   `----------------------------------'                                       `----------------------------------'
      *                                        ,-------------.       ,-------------.
      *                                        | LCtl | LAlt |       | RAlt | RCtl |
@@ -25,16 +25,16 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     KEYMAP(  // layer 0 : default
         // left hand
-        EQL, 1,   2,   3,   4,   5,   ESC,
-        TAB, Q,   W,   E,   R,   T,   INS,
+        GRV, 1,   2,   3,   4,   5,   ESC,
+        TAB, Q,   W,   E,   R,   T,   BSLS,
         CLCK,A,   S,   D,   F,   G,
         LSFT,Z,   X,   C,   V,   B,   LGUI,
-        FN2, GRV, BSLS,LEFT,RGHT,
+        FN1, FN2, INS, LEFT,RGHT,
                                       LCTL,LALT,
                                            HOME,
                                  BSPC,DEL, END,
         // right hand
-             FN1, 6,   7,   8,   9,   0,   MINS,
+             EQL, 6,   7,   8,   9,   0,   MINS,
              RBRC,Y,   U,   I,   O,   P,   LBRC,
                   H,   J,   K,   L,   SCLN,QUOT,
              RGUI,N,   M,   COMM,DOT, SLSH,RSFT,
@@ -46,20 +46,20 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     KEYMAP(  // layout: layer 1: F-keys and media
         // left hand
-        TRNS,F1,  F2,  F3,  F4,  F5,  F6,
-        TRNS,F7,  F8,  F9,  F10, F11, F12,
-        TRNS,MPRV,MPLY,MNXT,VOLD,VOLU,
-        LSFT,MSTP,MSTP,NO,  MUTE,MUTE,LGUI,
-        TRNS,PSCR,SLCK,PAUS,NO,
+        TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,
+        TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,
+        TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,
+        LSFT,TRNS,TRNS,TRNS,TRNS,TRNS,LGUI,
+        TRNS,TRNS,TRNS,TRNS,TRNS,
                                       LCTL,LALT,
                                            TRNS,
                                  TRNS,TRNS,TRNS,
         // right hand
-             TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,
-             FN3, TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,
-                  TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,
-             RGUI,TRNS,TRNS,TRNS,TRNS,TRNS,RSFT,
-                       TRNS,TRNS,TRNS,TRNS,TRNS,
+             TRNS,F1,  F2,  F3,  F4,  F5,  F6,
+             FN3, F7,  F8,  F9,  F10, F11, F12,
+                  MPRV,MPLY,MNXT,VOLD,VOLU,TRNS,
+             RGUI,MSTP,MSTP,NO,  MUTE,MUTE,RSFT,
+                       PSCR,SLCK,PAUS,NO,TRNS,
         RALT,RCTL,
         TRNS,
         TRNS,TRNS,TRNS
